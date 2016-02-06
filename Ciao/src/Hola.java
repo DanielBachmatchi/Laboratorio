@@ -50,7 +50,7 @@ public class Hola {
 		btnSaluta.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				MessageDialog.openInformation(shell, "titolo", "Ciao mondo, crudele.");
+				MessageDialog.openInformation(shell, "titolo", "Ciao mondo.");
 			}
 		});
 		btnSaluta.setBounds(99, 89, 75, 25);
