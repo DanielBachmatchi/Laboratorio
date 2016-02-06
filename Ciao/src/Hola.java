@@ -1,5 +1,3 @@
-package prova;
-
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Button;
@@ -8,7 +6,7 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 
-public class prova {
+public class Hola {
 
 	protected Shell shell;
 
@@ -18,7 +16,7 @@ public class prova {
 	 */
 	public static void main(String[] args) {
 		try {
-			prova window = new prova();
+			Hola window = new Hola();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -52,11 +50,12 @@ public class prova {
 		btnSaluta.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				MessageDialog.openInformation(shell, "titolo", "Ciao Mondo, crudele.");
+				MessageDialog.openInformation(shell, "titolo", "Ciao mondo, crudele.");
 			}
 		});
-		btnSaluta.setBounds(69, 58, 75, 25);
+		btnSaluta.setBounds(99, 89, 75, 25);
 		btnSaluta.setText("Saluta");
 
 	}
+
 }
